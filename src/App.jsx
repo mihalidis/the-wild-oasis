@@ -1,13 +1,13 @@
 import React from 'react'
+import {RouterProvider} from "react-router-dom";
 import GlobalStyles from "./styles/GlobalStyles.js";
+import router from "./utils/router";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <RouterProvider router={router} />
     </>
   )
 }
